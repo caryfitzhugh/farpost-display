@@ -29,8 +29,7 @@
          :init farpost-display.handler/init
          :destroy farpost-display.handler/destroy}
 
-  ;:hooks [leiningen.garden
-  ;        leiningen.cljsbuild]
+  :clean-targets ^{:protect false} ["resources/public/css/application.css"]
 
   :garden {:builds [{
                      ;; Source paths where the stylesheet source code is
@@ -72,7 +71,10 @@
 
   :min-lein-version "2.4.3"
   :profiles
-    {:uberjar {:aot :all}
+    {:uberjar {:aot :all
+               :prep-tasks [["garden" "once"]
+                            ["cljsbuild" "once"]]
+               }
      :production
      {:ring
       {:open-browser? false, :stacktraces? false, :auto-reload? false}}
