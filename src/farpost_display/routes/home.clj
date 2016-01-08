@@ -7,6 +7,8 @@
     [:div
      [:h1 "FarPost Soccer Club"]
      [:div#main]
+
+     [:script {:src "/js/app.js"}]
     ]))
 
 (defroutes home-routes
