@@ -29,11 +29,10 @@
          :init farpost-display.handler/init
          :destroy farpost-display.handler/destroy}
 
-  :hooks [leiningen.garden
-          leiningen.cljsbuild]
+  ;:hooks [leiningen.garden
+  ;        leiningen.cljsbuild]
 
-  :garden {:builds [{;; Optional name of the build:
-                     :id "application"
+  :garden {:builds [{
                      ;; Source paths where the stylesheet source code is
                      :source-paths ["src/farpost_display/styles/application"]
                      ;; The var containing your stylesheet:
