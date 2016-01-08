@@ -20,7 +20,7 @@
                  ]
 
 
-  :plugins [[lein-ring "0.9.7"]
+  :plugins [[lein-ring "0.9.3"]
             [lein-cljsbuild "1.1.2"]
             [lein-garden "0.2.6" :exclusions [org.clojure/java.classpath org.clojure/clojure]]
             [lein-environ "1.0.0"]
@@ -73,12 +73,12 @@
 
   :min-lein-version "2.4.3"
   :profiles
-  {:uberjar {:aot :all}
-   :production
-   {:ring
-    {:open-browser? false, :stacktraces? false, :auto-reload? false}}
-   :dev
-   {:dependencies [[ring-mock "0.1.5"]
-                   [ring/ring-devel "1.3.1" :exclusions [org.clojure/java.classpath]]
+    {:uberjar {:aot :all}
+     :production
+     {:ring
+      {:open-browser? false, :stacktraces? false, :auto-reload? false}}
+     :dev
+     {:dependencies [[ring-mock "0.1.5"]
+                     [ring/ring-devel "1.3.1" :exclusions [org.clojure/java.classpath]]
 
-                   ]}})
+                     ]}})
