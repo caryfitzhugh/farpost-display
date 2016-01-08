@@ -25,6 +25,7 @@
             [lein-garden "0.2.5" :exclusions [org.clojure/java.classpath org.clojure/clojure]]
             [lein-environ "1.0.0"]
             ]
+
   :ring {:handler farpost-display.handler/app
          :init farpost-display.handler/init
          :destroy farpost-display.handler/destroy}
