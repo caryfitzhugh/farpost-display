@@ -3,7 +3,11 @@
             [farpost-display.views.layout :as layout]))
 
 (defn home []
-  (layout/common [:h1 "Hello World!"]))
+  (layout/common
+    [:div
+     [:h1 "FarPost Soccer Club"]
+     [:div#main]
+    ]))
 
 (defroutes home-routes
   (GET "/" [] (home)))

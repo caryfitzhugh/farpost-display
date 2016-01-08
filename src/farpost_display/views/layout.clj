@@ -5,5 +5,6 @@
   (html5
     [:head
      [:title "Welcome to farpost-display"]
-     (include-css "/css/screen.css")]
+     [:link {:href 'https://fonts.googleapis.com/css?family=Varela+Round' :rel 'stylesheet' :type 'text/css'}]
+     (include-css "/css/application.css")]
     [:body body]))
