@@ -20,9 +20,9 @@
                  ]
 
 
-  :plugins [[lein-ring "0.9.3"]
-            [lein-cljsbuild "1.1.2"]
-            [lein-garden "0.2.6" :exclusions [org.clojure/java.classpath org.clojure/clojure]]
+  :plugins [[lein-ring "0.9.1"]
+            [lein-cljsbuild "1.0.5"]
+            [lein-garden "0.2.5" :exclusions [org.clojure/java.classpath org.clojure/clojure]]
             [lein-environ "1.0.0"]
             ]
   :ring {:handler farpost-display.handler/app
