@@ -4,11 +4,15 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.1.6"]
                  [hiccup "1.0.5"]
-                 [ring-server "0.3.1"]]
+                 [ring-server "0.3.1"]
+                 [ring/ring-servlet "1.4.0"]
+                 ]
   :plugins [[lein-ring "0.8.12"]]
   :ring {:handler farpost-display.handler/app
          :init farpost-display.handler/init
          :destroy farpost-display.handler/destroy}
+
+  :min-lein-version "2.0.0"
   :profiles
   {:uberjar {:aot :all}
    :production
