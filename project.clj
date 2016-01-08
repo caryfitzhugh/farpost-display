@@ -1,5 +1,5 @@
 (defproject farpost-display "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
+  :description ""
   :url "http://example.com/FIXME"
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [compojure "1.4.0"]
@@ -11,12 +11,12 @@
                  [garden "1.2.5"]
                  [environ               "1.0.0"]
 
-                 [org.clojure/clojurescript "1.7.170" :exclusions [org.clojure/data.json]]
+                 [org.clojure/clojurescript "1.7.228" :exclusions [org.clojure/data.json]]
                  [prismatic/dommy "1.0.0"]
                  [reagent "0.5.1" :exclusions [org.clojure/data.json]]
                  [secretary "1.2.3"]
                  [cljs-ajax "0.3.14" :exclusions [org.clojure/data.json]]
-                 [com.andrewmcveigh/cljs-time "0.3.4"]
+                 [com.andrewmcveigh/cljs-time "0.4.0"]
                  ]
 
 

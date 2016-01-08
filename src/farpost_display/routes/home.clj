@@ -5,9 +5,7 @@
 (defn home []
   (layout/common
     [:div
-     [:h1 "FarPost Soccer Club"]
      [:div#main]
-
      [:script {:src "/js/app.js"}]
     ]))
 
