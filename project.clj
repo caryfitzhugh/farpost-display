@@ -21,7 +21,7 @@
 
 
   :plugins [[lein-ring "0.9.1"]
-            [lein-cljsbuild "1.0.5"]
+            [lein-cljsbuild "1.1.1"]
             [lein-garden "0.2.5" :exclusions [org.clojure/java.classpath org.clojure/clojure]]
             [lein-environ "1.0.0"]
             ]
