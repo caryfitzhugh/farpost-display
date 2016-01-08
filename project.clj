@@ -72,11 +72,13 @@
   :min-lein-version "2.4.3"
   :profiles
     {:uberjar {:aot :all
-               :prep-tasks [["garden" "once"]
-                            ["cljsbuild" "once"]]
                }
      :production
-     {:ring
+     {
+      :prep-tasks [["garden" "once"]
+                   ["cljsbuild" "once"]]
+
+      :ring
       {:open-browser? false, :stacktraces? false, :auto-reload? false}}
      :dev
      {:dependencies [[ring-mock "0.1.5"]
