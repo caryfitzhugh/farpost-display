@@ -25,6 +25,7 @@
             [lein-garden "0.2.5" :exclusions [org.clojure/java.classpath org.clojure/clojure]]
             [lein-environ "1.0.0"]
             ]
+
   :ring {:handler farpost-display.handler/app
          :init farpost-display.handler/init
          :destroy farpost-display.handler/destroy}
@@ -70,13 +71,14 @@
   }
 
   :min-lein-version "2.4.3"
+
   :profiles
     {:uberjar {:aot :all
+               :prep-tasks [["garden" "once"]
+                   ["cljsbuild" "once"]]
                }
      :production
      {
-      :prep-tasks [["garden" "once"]
-                   ["cljsbuild" "once"]]
 
       :ring
       {:open-browser? false, :stacktraces? false, :auto-reload? false}}
