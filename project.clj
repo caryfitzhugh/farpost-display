@@ -54,7 +54,7 @@
                          :output-dir "resources/public/js/compiled/"
                          :asset-path "js/compiled"
                          :optimizations :none
-                         :main "farpost_display.main"
+                         :main "farpost_display.client.main"
                          :pretty-print true}
              }
 
@@ -63,7 +63,7 @@
               :compiler {
                          :output-to "resources/public/js/app.min.js"
                          :output-dir "resources/public/js/minified"
-                         :main "farpost_display.main"
+                         :main "farpost_display.client.main"
                          :optimizations :whitespace
                          }
              }
